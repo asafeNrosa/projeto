@@ -23,4 +23,9 @@ export class ListaCompras {
     this.lista.push(novoItem);
     this.item = ''; 
   }
+
+  limparLista(){
+    this.lista = [];
+    console.log('A lista foi limpa!');
+  }
 }

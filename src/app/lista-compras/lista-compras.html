@@ -2,8 +2,11 @@
   <h1> Minha Lista de Compras</h1>
   
   <form (ngSubmit)="adicionarItem()">
-    <input type="text" name="item" [(ngModel)]="item" placeholder="Ex: Arroz">
+    <input type="text" name="item" [(ngModel)]="item" placeholder="Ex: Digite seu item.">
     <button type="submit">Adicionar</button>
+
+    <button type="button" (click)="limparLista()">Limpar lista</button>
+
   </form>
 
   <table>

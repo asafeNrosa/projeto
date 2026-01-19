@@ -2,6 +2,12 @@
   max-width: 500px;
   margin: 50px auto;
   font-family: Arial, sans-serif;
+  margin-top: 20px;
+  background-color: #bbd1c0;
+  color: rgb(17, 19, 19);
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
 }
 
 table {
@@ -21,10 +27,22 @@ input[type="text"] {
   width: 70%;
 }
 
-button {
-  padding: 8px 15px;
+button [type = "submit"]:hover {
+  padding: 25px;
+  margin-left: 4px;
   background-color: #28a745;
-  color: white;
+  color: rgb(230, 199, 199);
+  border: 1px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 4px;
+}
+button [type = "button"]{
+  margin-right: 90%;
+  background-color: #031d09;
+  color: rgb(5, 5, 5);
   border: none;
   cursor: pointer;
+  margin: 5px;
+  border-radius: 4px;
 }
