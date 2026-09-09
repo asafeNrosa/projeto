@@ -1,12 +1,10 @@
 <div class="container">
-  <h1> Minha Lista de Compras</h1>
+  <h1>Minha Lista de Compras</h1>
   
   <form (ngSubmit)="adicionarItem()">
     <input type="text" name="item" [(ngModel)]="item" placeholder="Ex: Digite seu item.">
     <button type="submit">Adicionar</button>
-
     <button type="button" (click)="limparLista()">Limpar lista</button>
-
   </form>
 
   <table>
@@ -30,7 +28,7 @@
         </tr>
       } @empty {
         <tr>
-          <td colspan="3" style="text-align: center; padding: 20px;">
+          <td colspan="3" class="vazio">
             Sua lista está vazia. Comece a adicionar!
           </td>
         </tr>
